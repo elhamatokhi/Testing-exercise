@@ -1,7 +1,4 @@
-// const { describe } = require("@jest/globals");
-const  { stringLength,  Calc ,reverseString}   = require("./sum.js");
-// const  = require("./sum.js");
-// const Calc = require("./sum.js");
+const { stringLength, Calc, reverseString, capitalize } = require("./sum.js");
 
 test("string is >= 1 and <= 10", () => {
   const name = "Elhama";
@@ -16,7 +13,6 @@ test("This is a reversed string", () => {
 
   expect(reverseString(name)).toBe(reversedName);
 });
-
 
 describe("Calculator tester", () => {
   const n1 = 19;
@@ -48,4 +44,10 @@ describe("Calculator tester", () => {
     const powerNums = Math.pow(n1, n2);
     expect(calc.power()).toBe(powerNums);
   });
+});
+
+test("Check if the string is capitalized", () => {
+  const name = "elhama";
+  const nameCapitallized = "Elhama";
+  expect(capitalize(name)).toBe(nameCapitallized);
 });

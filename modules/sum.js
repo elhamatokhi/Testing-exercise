@@ -43,7 +43,13 @@ class Calc {
   }
 }
 
+//Test 4
+
+const capitalize = (string) => {
+  return string[0].toUpperCase() + string.slice(1);
+};
+
+exports.capitalize = capitalize;
 exports.reverseString = reverseString;
 exports.stringLength = stringLength;
 exports.Calc = Calc;
-
